@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { ChevronDown, UserCircle } from "lucide-react";
-import { dashboard, departments } from "@/lib/nav-config";
+import { dashboard, departments, myApps } from "@/lib/nav-config";
 
 export default function Sidebar() {
   const pathname = usePathname();
@@ -37,6 +37,18 @@ export default function Sidebar() {
         >
           <dashboard.icon size={18} strokeWidth={2} />
           {dashboard.label}
+        </Link>
+
+        <Link
+          href={`/${myApps.slug}`}
+          className={`mb-2 flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors ${
+            pathname === `/${myApps.slug}`
+              ? "bg-cosops-gold/15 text-cosops-gold"
+              : "text-cosops-sidebar-text/85 hover:bg-black/5 hover:text-cosops-sidebar-text"
+          }`}
+        >
+          <myApps.icon size={18} strokeWidth={2} />
+          {myApps.label}
         </Link>
 
         <div className="my-2 border-t border-cosops-sidebar-border" />

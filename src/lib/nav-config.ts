@@ -1,5 +1,6 @@
 import {
   LayoutDashboard,
+  AppWindow,
   Award,
   Crown,
   Workflow,
@@ -20,6 +21,8 @@ export type SubmenuItem = {
   description: string;
   /** When set, the content panel embeds this URL in an iframe. Leave unset for a "coming soon" placeholder. */
   embedUrl?: string;
+  /** When set (and embedUrl isn't), the content panel links out to this URL in a new tab instead of embedding it — use this for pages that block iframing (e.g. Microsoft login/account surfaces send X-Frame-Options: DENY). */
+  externalUrl?: string;
 };
 
 export type Department = {
@@ -33,6 +36,19 @@ export const dashboard = {
   slug: "",
   label: "Dashboard",
   icon: LayoutDashboard,
+};
+
+/**
+ * Pinned top-level link, alongside Dashboard. Microsoft's login/account
+ * pages send X-Frame-Options: DENY, so this can't be iframed — it opens in
+ * a new tab instead.
+ */
+export const myApps: SubmenuItem & { icon: LucideIcon } = {
+  slug: "myapps",
+  label: "MyApps",
+  icon: AppWindow,
+  description: "Launch your assigned apps from the Microsoft Entra ID My Apps portal.",
+  externalUrl: "https://myapplications.microsoft.com/",
 };
 
 /**
