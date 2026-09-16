@@ -1,26 +1,29 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f4f4f5;
+  --foreground: #29282a;
+
+  /* COSops brand palette, sourced from the COSphere app it mirrors */
+  --cosops-charcoal: #424043;
+  --cosops-charcoal-dark: #2c2a2d;
+  --cosops-gold: #c79a5d;
+  --cosops-gold-light: #e4c495;
+  --cosops-border: #e4e4e7;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-cosops-charcoal: var(--cosops-charcoal);
+  --color-cosops-charcoal-dark: var(--cosops-charcoal-dark);
+  --color-cosops-gold: var(--cosops-gold);
+  --color-cosops-gold-light: var(--cosops-gold-light);
+  --color-cosops-border: var(--cosops-border);
+  --font-sans: var(--font-poppins);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
