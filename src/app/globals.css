@@ -10,6 +10,9 @@
   --cosops-gold: #c79a5d;
   --cosops-gold-light: #e4c495;
   --cosops-border: #e4e4e7;
+  --cosops-sidebar-bg: #f6f8fa;
+  --cosops-sidebar-text: #24292f;
+  --cosops-sidebar-border: #d0d7de;
 }
 
 @theme inline {
@@ -20,6 +23,9 @@
   --color-cosops-gold: var(--cosops-gold);
   --color-cosops-gold-light: var(--cosops-gold-light);
   --color-cosops-border: var(--cosops-border);
+  --color-cosops-sidebar-bg: var(--cosops-sidebar-bg);
+  --color-cosops-sidebar-text: var(--cosops-sidebar-text);
+  --color-cosops-sidebar-border: var(--cosops-sidebar-border);
   --font-sans: var(--font-poppins);
 }
 
