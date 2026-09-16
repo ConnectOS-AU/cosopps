@@ -82,6 +82,12 @@ export const departments: Department[] = [
     label: "DTO",
     icon: Workflow,
     submenus: [
+      {
+        slug: "cosmos",
+        label: "COSMOS",
+        description: "The DTO's COSMOS Core Portal (PMO) on SharePoint.",
+        externalUrl: "https://connectos.sharepoint.com/sites/PMO",
+      },
       { slug: "projects", label: "Projects", description: "Digital Transformation Office project tracker." },
       { slug: "automations", label: "Automations", description: "Automation catalogue and requests." },
       { slug: "data-analytics", label: "Data & Analytics", description: "Reporting and analytics resources." },
