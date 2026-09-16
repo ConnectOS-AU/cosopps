@@ -7,7 +7,7 @@ import {
   Users,
   Wallet,
   Laptop,
-  Lightbulb,
+  UserPlus,
   Building2,
   Settings2,
   type LucideIcon,
@@ -70,6 +70,7 @@ export const departments: Department[] = [
         label: "COScomms",
         description:
           "ConnectOS's internal email campaign and survey platform, built by the Marketing team.",
+        embedUrl: "https://coscomms.connectos.co",
       },
       { slug: "brand-assets", label: "Brand Assets", description: "Logos, templates and brand guidelines." },
       { slug: "campaign-calendar", label: "Campaign Calendar", description: "Upcoming campaigns and key dates." },
@@ -116,13 +117,13 @@ export const departments: Department[] = [
     ],
   },
   {
-    slug: "innovation",
-    label: "Innovation",
-    icon: Lightbulb,
+    slug: "recruitment",
+    label: "Recruitment",
+    icon: UserPlus,
     submenus: [
-      { slug: "ideas", label: "Ideas", description: "Submit and browse improvement ideas." },
-      { slug: "pilots", label: "Pilots", description: "Active pilot programs." },
-      { slug: "ai-tools", label: "AI Tools", description: "Approved AI tools and usage guidance." },
+      { slug: "open-roles", label: "Open Roles", description: "Current job openings and requisitions." },
+      { slug: "candidate-pipeline", label: "Candidate Pipeline", description: "Track candidates through the hiring process." },
+      { slug: "referrals", label: "Employee Referrals", description: "Refer a candidate and track referral bonuses." },
     ],
   },
   {
