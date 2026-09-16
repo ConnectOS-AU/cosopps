@@ -1,5 +1,6 @@
 import {
   LayoutDashboard,
+  Award,
   Crown,
   Workflow,
   Megaphone,
@@ -40,6 +41,16 @@ export const dashboard = {
  * and internal tools are ready to link in.
  */
 export const departments: Department[] = [
+  {
+    slug: "ceo",
+    label: "CEO",
+    icon: Award,
+    submenus: [
+      { slug: "message-from-the-ceo", label: "Message from the CEO", description: "Updates and notes from the CEO." },
+      { slug: "company-updates", label: "Company Updates", description: "Company-wide news and milestones." },
+      { slug: "town-halls", label: "Town Halls", description: "Recordings and recaps of town hall sessions." },
+    ],
+  },
   {
     slug: "leadership",
     label: "Leadership",
