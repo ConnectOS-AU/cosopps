@@ -114,6 +114,13 @@ export const departments: Department[] = [
     label: "Sales",
     icon: TrendingUp,
     submenus: [
+      {
+        slug: "deals",
+        label: "Deals",
+        description: "Deals Power BI report.",
+        embedUrl:
+          "https://app.powerbi.com/reportEmbed?reportId=2e48a177-2301-454d-b47c-14097c49e035&appId=175c7ea3-9500-47f9-9098-3d28653fd782&autoAuth=true&ctid=fe08b8f2-f035-4ca5-af15-e2b34586e6ca&actionBarEnabled=true",
+      },
       { slug: "crm", label: "CRM", description: "Customer relationship management tools." },
       { slug: "pipeline", label: "Pipeline", description: "Sales pipeline and forecasts." },
       { slug: "collateral", label: "Collateral", description: "Sales decks and proposal templates." },
